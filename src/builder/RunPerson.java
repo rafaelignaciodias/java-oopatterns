@@ -1,13 +1,13 @@
 package builder;
 
-public class PersonLauncher {
+public class RunPerson {
 
     public static void main(String[] args) {
+        System.out.println("BUILDER - OOPatterns Concepts\n");
 
         // EMPTY PERSON INSTANCE ////////////////////////////////////
         Person person1 = PersonBuilder.create().build();
         System.out.println(person1.toString());
-
 
         // PARTIAL PERSON INSTANCE //////////////////////////////////
         Person person2 = PersonBuilder.create()
@@ -16,8 +16,7 @@ public class PersonLauncher {
                 .build();
         System.out.println(person2.toString());
 
-
-        // FULL PERSON INSTANCE //////////////////////////////////
+        // FULL PERSON INSTANCE /////////////////////////////////////
         Person person3 = PersonBuilder.create()
                 .firstName("John")
                 .lastName("Smith")
@@ -26,6 +25,5 @@ public class PersonLauncher {
                 .address("362 King Street")
                 .build();
         System.out.println(person3.toString());
-
     }
 }
