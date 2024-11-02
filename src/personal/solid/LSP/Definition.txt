@@ -1,0 +1,36 @@
+Liskov Substitution Principle (LSP)
+
+Definition
+    The Liskov Substitution Principle states that objects of a superclass should be replaceable with objects
+    of a subclass without affecting the correctness of the program.
+
+    In other words, subclasses must be able to stand in for their base classes without causing errors
+    or unexpected behavior.
+
+Classes
+    Bird: A base class representing general bird behavior.
+    Sparrow: A subclass that can fly.
+    Ostrich: A subclass that cannot fly (but we’ll address this to comply with LSP).
+
+
+///////////////////////////////////////////////////////////////////////////////
+
+// Bird.java
+abstract class Bird {
+    abstract void fly();
+}
+
+// Sparrow.java
+class Sparrow extends Bird {
+    @Override
+    void fly() {
+        System.out.println("Sparrow is flying!");
+    }
+}
+
+// Ostrich.java
+class Ostrich extends Bird {
+    @Override
+    void fly() {
+        throw new UnsupportedOperationException("Ostriches can't fly!");
+    }

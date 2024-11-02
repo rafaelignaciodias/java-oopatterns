@@ -1,0 +1,10 @@
+Single Responsibility Principle (SRP) in Detail
+
+Definition
+    The Single Responsibility Principle states that a class should have only one reason to change,
+    meaning it should have only one job or responsibility. This makes the code easier to maintain and understand.
+
+
+Classes
+    Report: Responsible for generating a report.
+    ReportPrinter: Responsible for printing the report.

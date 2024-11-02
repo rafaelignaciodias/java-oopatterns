@@ -1,0 +1,18 @@
+Interface Segregation Principle (ISP)
+
+Definition
+The Interface Segregation Principle states that no client should be forced to depend on methods it does not use.
+This means that interfaces should be specific to their clients, rather than having a large, general-purpose interface.
+
+
+Interfaces and Classes
+Printer: An interface for printing functionality.
+Scanner: An interface for scanning functionality.
+MultiFunctionPrinter: A class that implements both Printer and Scanner.
+SimplePrinter: A class that implements only the Printer interface.
+
+
+Benefits of ISP in This Example
+Specificity: Clients are not forced to implement methods they do not use, reducing unnecessary dependencies.
+Maintainability: Each interface is focused, making the code easier to understand and maintain.
+Flexibility: New classes can be added without affecting existing ones, as each can implement only the relevant interfaces.

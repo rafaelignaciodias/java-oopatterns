@@ -1,0 +1,21 @@
+Open/Closed Principle (OCP)
+
+Definition
+    The Open/Closed Principle states that software entities (classes, modules, functions, etc.)
+    should be open for extension but closed for modification.
+
+    This means you should be able to add new functionality to a class without changing its existing code,
+    typically achieved through inheritance or interfaces.
+
+
+Classes
+    Shape: An abstract base class.
+    Circle: A concrete implementation of Shape.
+    Square: Another concrete implementation of Shape.
+    ShapeAreaCalculator: A class responsible for calculating the area of shapes.
+
+
+Benefits of OCP in This Example
+    Flexibility: New shapes can be added without modifying existing code.
+    Reduced Risk: Since existing code remains untouched, the risk of introducing bugs is minimized.
+M   aintainability: It’s easier to maintain and extend the codebase over time.

@@ -1,0 +1,24 @@
+Dependency Inversion Principle (DIP)
+
+Definition
+    The Dependency Inversion Principle states that high-level modules should not depend on low-level modules;
+    both should depend on abstractions. Additionally, abstractions should not depend on details;
+    details should depend on abstractions. This principle helps to reduce coupling and increase code flexibility.
+
+
+Interfaces and Classes
+    NotificationService: An interface that defines a notification method.
+    EmailNotification: A class that implements the NotificationService for email notifications.
+    SMSNotification: A class that implements the NotificationService for SMS notifications.
+    User: A class that uses the NotificationService interface to send notifications.
+
+
+Benefits of DIP in This Example
+    Loose Coupling: The User class is not tightly coupled to specific notification implementations,
+    allowing for easier modifications and extensions.
+
+    Easier Testing: You can easily test the User class with different notification services by
+    providing mock implementations.
+
+    Extensibility: New notification methods can be added without modifying existing classes, adhering to the Open/Closed
+    Principle as well.
